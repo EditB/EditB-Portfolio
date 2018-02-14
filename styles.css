@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  //padding: 1em;
+}
+
+h1, h3 {
+  color: #067ed3;
+}
+
+h1 img{
+  margin: 0;
+  margin-right: 10px;
+  float: left;
+}
+
+
+mark {
+  background-color:#ddfffd;
+  color: #067ed3;
+
+}  
+ 
+img {
+  margin: 5px;
+}  
+
+.desc{
+  margin: 5px;
+}
+
+.desc ul{
+  margin: 0;
+  padding: 4px;
+}
+
+.desc ul li{
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+#navMenu{
+  margin-bottom: 2em;
+}
+
+#navMenu ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0; 
+ background-color: #ddfffd;
+ //width: 31em;
+ width: 500px;
+ font-size: 1.2em;
+}  
+
+#navMenu ul li {
+  display: inline;
+
+}
+
+#navMenu li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #000;  
+}  
+  
+#navMenu li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #67fcf3;
+    color: white;
+}
+
+
+  #projectGrid{
+    float: none;
+    width: 100%;
+ }
+
+ #glitch{
+  float: left;
+  width: 30%;
+  padding: 2%;
+ }
+
+ #codepen{
+  float: left;
+  width: 30%;
+  padding: 2%;
+ }
+
+ #wp{
+  float: left;
+  width: 30%;  
+  padding: 2%;
+ }
+
+ #col1{
+  float: left;
+  width: 40%;
+  padding: 2%;
+}
+
+ #col2{
+  float: left;
+  width: 40%;
+  padding: 2%;
+ }
+
+
+ @media screen and (max-width: 550px){
+  #glitch, #codepen, #wp, #col1, #col2, #navMenu ul {
+    float: none;
+    width: 100%;
+  }
+ }
