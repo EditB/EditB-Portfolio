@@ -13,16 +13,50 @@
   </head>  
 
   <body>
+   <div class="board">
     <nav id="navMenu"></nav>
     <!--nav id="navMenu"  w3-include-html="nav.html"></nav>
     <script>w3.includeHTML();</script-->
     
-    <h1><img src="pics/Glitch-Projects.gif" alt="Glitch Projects" width="60" height="30">&nbsp;<mark>EditB's Glitch Projects</mark></h1>
+    <h1><img src="pics/Glitch-Projects.gif" alt="Glitch Projects" width="52" height="40">&nbsp;<mark>EditB's Glitch Projects</mark></h1>
     
     <p>
       Here are some Glitch projects I've created. Enjoy your browse and have a lovely day!<br>
     </p>
     
+    <div id="col1">
+        <h2>Server side scripting (with no database)</h2>
+
+        <div class="yellowPostIt"> 
+          <h3>Timestamp Microservice</h3>
+          <img src="pics/Timestamp-Microservice.jpg" alt="Timestamp Microservice" width="350" height="105">
+          <div class="desc">
+            User Stories:
+            <ul>
+              <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</li>
+              <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+              <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+            </ul>
+          </div>
+        </div> 
+    </div>     
+
+    <div id="col2">
+          <h2>Server side scripting (using MongoDB)</h2>
+        <div class="purplePostIt">  
+          <h3>URL-Shortener Microservice</h3>
+          <img src="pics/URL-shortener.jpg" alt="URL-Shortener Project" width="222" height="105">
+          <div class="desc">
+            User Stories:
+            <ul>
+              <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+              <li> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+              <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+            </ul>
+          </div>
+        </div>  
+    </div>     
+   </div>
   </body>  
 
 </html>  

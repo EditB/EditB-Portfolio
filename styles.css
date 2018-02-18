@@ -1,13 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
 * {
   box-sizing: border-box;
 }
 
-body{
-  //padding: 1em;
+
+
+.board{
+  //font-family: Satisfy, 'Shadows Into Light Two', arial,sans-serif;
+  //font-family: Oswald;
+
+  padding: 40px;
+  overflow-x: hidden; /* For Opera */
+  -webkit-box-shadow:
+    inset #19d4ff 0 0 0 5px,
+    inset #18cdf7 0 0 0 1px,
+    inset #53dfff 0 0 0 10px,
+    inset #50d8f7 0 0 0 11px,
+    inset #8ce9ff 0 0 0 16px,
+    inset #88e2f7 0 0 0 17px,
+    inset #c5f4ff 0 0 0 22px,
+    inset #bfecf7 0 0 0 23px;
+  -moz-box-shadow:
+    inset #19d4ff 0 0 0 5px,
+    inset #18cdf7 0 0 0 1px,
+    inset #53dfff 0 0 0 10px,
+    inset #50d8f7 0 0 0 11px,
+    inset #8ce9ff 0 0 0 16px,
+    inset #88e2f7 0 0 0 17px,
+    inset #c5f4ff 0 0 0 22px,
+    inset #bfecf7 0 0 0 23px;
+  box-shadow:
+    inset #19d4ff 0 0 0 5px,
+    inset #18cdf7 0 0 0 1px,
+    inset #53dfff 0 0 0 10px,
+    inset #50d8f7 0 0 0 11px,
+    inset #8ce9ff 0 0 0 16px,
+    inset #88e2f7 0 0 0 17px,
+    inset #c5f4ff 0 0 0 22px,
+    inset #bfecf7 0 0 0 23px;
+
+
 }
 
 h1, h3 {
   color: #067ed3;
+}
+
+h1{
+  margin-bottom: 1em;
 }
 
 h1 img{
@@ -16,6 +57,10 @@ h1 img{
   float: left;
 }
 
+h2{
+  font-size: 1.5em;
+  color: #06ada2;
+}
 
 mark {
   background-color:#ddfffd;
@@ -77,41 +122,83 @@ img {
 }
 
 
-  #projectGrid{
+ #projectGrid{
     float: none;
-    width: 100%;
- }
-
- #glitch{
-  float: left;
-  width: 30%;
-  padding: 2%;
+    width:100%;
  }
 
  #codepen{
   float: left;
-  width: 30%;
+  width: 27%;
+  padding: 2%;
+ }
+
+ #glitch{
+  float: left;
+  width: 27%;
   padding: 2%;
  }
 
  #wp{
   float: left;
-  width: 30%;  
+  width: 27%;  
   padding: 2%;
  }
 
- #col1{
+ .col1{
   float: left;
   width: 40%;
   padding: 2%;
 }
 
- #col2{
+ .col2{
   float: left;
   width: 40%;
   padding: 2%;
  }
 
+ .yellowPostIt, .greenPostIt, .purplePostIt{
+  
+  padding:1em;
+  margin: 2em;
+   border:1px solid #E8E8E8;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+ }
+
+ .yellowPostIt{
+  //background:#ffc;
+  background:#ffff88;
+ 
+  -webkit-transform:rotate(-2deg);
+  -o-transform:rotate(-2deg);
+  -moz-transform:rotate(-2deg);
+ 
+  border-bottom-right-radius: 60px 5px;
+ }
+
+ .greenPostIt{
+  background: #cfc;
+  
+  -webkit-transform:rotate(2deg);
+  -o-transform:rotate(2deg);
+  -moz-transform:rotate(2deg);
+  
+  border-top-left-radius: 60px 5px;
+  border-bottom-right-radius: 60px 5px;
+}
+
+
+ .purplePostIt{
+   background: #ccf;
+
+  -webkit-transform:rotate(-1deg);
+  -o-transform:rotate(-1deg);
+  -moz-transform:rotate(-1deg);
+
+  border-top-right-radius: 60px 5px;
+ }
 
  @media screen and (max-width: 550px){
   #glitch, #codepen, #wp, #col1, #col2, #navMenu ul {

@@ -13,44 +13,145 @@
     
   </head>
   <body>
+   <div class="board">
     <nav id="navMenu"></nav>
     <!--nav id="navMenu"  w3-include-html="nav.html"></nav>
     <script>w3.includeHTML();</script-->
     
-    <h1><img src="pics/CodePen-project.gif" alt="CodePen Projects" width="60" height="30">&nbsp;<mark>EditB's CodePen Projects</mark></h1>
+    <h1><img src="pics/CodePen-project.gif" alt="CodePen Projects" width="72" height="40">&nbsp;<mark>EditB's CodePen Projects</mark></h1>
     
     <p>
       Here are some CodePen projects I've created, using HTML, CSS, jQuery and React. Enjoy your browse and have a lovely day!<br>
     </p>
     <div id="container">
       
-        <div id="col1">
-          <h3>Javascript Calculator</h3>
-          <img src="pics/calculator_big.jpg" alt="Calculator Project" width="128" height="142">
-          <div class="desc">
-            User Stories:
-            <ul>
-              <li>I can add, subtract, multiply and divide two numbers.</li>
-              <li>I can clear the input field with a clear button.</li>
-              <li>I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.</li>
-            </ul>
+        <div class="col1">
+          <div class="greenPostIt">
+            <h3>Javascript Calculator</h3>
+            <img src="pics/calculator_big.jpg" alt="Calculator Project" width="128"   height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can add, subtract, multiply and divide two numbers.</li>
+                <li>I can clear the input field with a clear button.</li>
+                <li>I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.</li>
+              </ul>
+            </div>
           </div>
-        </div> 
+
+          <div class="purplePostIt">
+            <h3>Simon Game</h3>
+            <img src="pics/Simon-Game_big.jpg" alt="Simon Game" width="147" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I am presented with a random series of button presses.</li>
+                <li>Each time I input a series of button presses correctly, I see the same series of button presses but with an additional step.</li>
+                <li>I hear a sound that corresponds to each button both when the series of button presses plays, and when I personally press a button.</li>
+                <li>If I press the wrong button, I am notified that I have done so, and that series of button presses starts again to remind me of the pattern so I can try again.</li>
+                <li>I can see how many steps are in the current series of button presses.</li>
+                <li>If I want to restart, I can hit a button to do so, and the game will return to a single step.</li>
+                <li>I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.</li>
+                <li>I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="yellowPostIt">
+            <h3>Pomodoro Clock</h3>
+            <img src="pics/Pomodoro-session_big.jpg" alt="Pomodoro Clock Project" width="165" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed.</li>
+                <li>I can reset the clock for my next pomodoro.</li>
+                <li>I can customize the length of each pomodoro.</li>
+              </ul>
+            </div>
+           </div>
+           
+           <div class="purplePostIt"> 
+            <h3>Wikipedia Viewer</h3>
+            <img src="pics/wiki_viewer.jpg" alt="Wikipedia Viewer Project" width="225" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.</li>
+                <li>I can click a button to see a random Wikipedia entry.</li>
+              </ul>
+            </div>
+           </div> 
+         </div>
       
-        <div id="col2">
-          <h3>Current Weather</h3>
-          <img src="pics/current-weather_big.jpg" alt="Current Weather Project" width="175" height="142">
-          <div class="desc">
-            User Stories:
-            <ul>
-              <li>I can see the weather in my current location.</li>
-              <li>I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
-              <li>I can push a button to toggle between Fahrenheit and Celsius.</li>
-            </ul>
+        <div class="col2">
+
+          <div class="yellowPostIt"> 
+            <h3>Current Weather</h3>
+            <img src="pics/current-weather_big.jpg" alt="Current Weather Project" width="177" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can see the weather in my current location.</li>
+                <li>I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
+                <li>I can push a button to toggle between Fahrenheit and Celsius.</li>
+              </ul>
+            </div>
           </div>
+
+
+          <div class="greenPostIt"> 
+            <h3>Markdown Previewer</h3>
+            <img src="pics/Markdown-Previewer_big.jpg" alt="Markdown Previewer Project" width="259" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can type GitHub-flavored Markdown into a text area.</li>
+                <li>I can see a preview of the output of my markdown that is updated as I type.</li>
+              </ul>
+            </div>
+           </div>
+           
+
+           <div class="yellowPostIt"> 
+            <h3>Random Quote Machine</h3>
+            <img src="pics/Random-Quote-Machine_big.jpg" alt="Random Quote Project" width="280" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can click a button to show me a new random quote.</li>
+                <li>I can press a button to tweet out a quote.</li>
+              </ul>
+            </div>
+           </div>
+
+           <div class="purplePostIt"> 
+            <h3>Tic Tac Toe</h3>
+            <img src="pics/TicTacToe_big.jpg" alt="Tic Tac Toe Project" width="109" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can play a game of Tic Tac Toe with the computer.</li>
+                <li>My game will reset as soon as it's over so I can play again.</li>
+                <li>I can choose whether I want to play as X or O.</li>
+              </ul>
+            </div>
+           </div>
+           
+           <div class="greenPostIt"> 
+            <h3>Twitch TV</h3>
+            <img src="pics/twitch_tv_big.jpg" alt="Twitch TV Project" width="122" height="142">
+            <div class="desc">
+              User Stories:
+              <ul>
+                <li>I can see whether Free Code Camp is currently streaming on Twitch.tv</li>
+                <li>I can click the status output and be sent directly to the Free Code Camp's Twitch.tv channel.</li>
+                <li>If a Twitch user is currently streaming, I can see additional details about what they are streaming.</li>
+              </ul>
+            </div>
+           </div> 
         </div>
        
     </div> 
-
+   </div>
   </body>
 </html>
